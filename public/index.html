@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's My Adaptor?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>What's My Adaptor?</h1>
+    <p class="subtitle">Upload a photo of a cord or adaptor and we'll tell you what it is.</p>
+
+    <div class="upload-area" id="uploadArea">
+      <input type="file" id="fileInput" accept="image/jpeg,image/png,image/gif,image/webp" hidden>
+      <div class="upload-prompt" id="uploadPrompt">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+        <p>Click or drag an image here</p>
+        <span>JPEG, PNG, GIF, or WebP — max 10MB</span>
+      </div>
+      <img id="preview" alt="Preview" hidden>
+    </div>
+
+    <button id="analyzeBtn" disabled>Identify This</button>
+
+    <div id="result" hidden>
+      <h2>Result</h2>
+      <div id="resultText"></div>
+    </div>
+
+    <div id="error" hidden>
+      <p id="errorText"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

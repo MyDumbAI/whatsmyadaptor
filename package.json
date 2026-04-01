@@ -1,0 +1,16 @@
+{
+  "name": "whatsmyadaptor",
+  "version": "1.0.0",
+  "description": "Upload a photo of a cord or adaptor and find out what it is",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.2.0",
+    "multer": "^2.1.1"
+  }
+}
