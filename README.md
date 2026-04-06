@@ -28,6 +28,3 @@ echo "ANTHROPIC_API_KEY=your_key_here" > .env
 node server.js
 ```
 
-## Why this was never really promoted
-
-Honestly? Because 
